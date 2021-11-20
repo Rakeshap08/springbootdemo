@@ -5,18 +5,21 @@ public class Employee {
 	public Employee() {
 		
 	}
-	public Employee(Integer id, String firstName, String lastName, String email) {
+
+	public Employee(Integer id, String firstName, String lastName, String email,String phoneNum) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.phoneNum = phoneNum;
 	}
 	
 	private Integer id;
 	private String firstName;
 	private String lastName;
 	private String email;
+	private String phoneNum;
 	
 	public Integer getId() {
 		return id;
@@ -42,6 +45,13 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
+	}
+	public String getPhoneNum() {
+		return phoneNum;
+	}
+
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", firstName=" + firstName
